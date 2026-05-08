@@ -1,0 +1,25 @@
+{
+  "project_number": 11,
+  "title": "NASA Turbofan Engine RUL Prediction",
+  "methodology": "Survival analysis / RUL regression on multivariate sensor sequences; Random Forest baseline + LSTM / 1D-Transformer advanced; piece-wise linear RUL with cap = 125 cycles",
+  "phase": "Phase 1 - scaffolded code-only",
+  "status": {
+    "folder_structure": true,
+    "brief_written": true,
+    "dataset_downloaded": false,
+    "eda_notebook_built": true,
+    "refs_verified_count": 33,
+    "baseline_script_built": true,
+    "advanced_script_built": true,
+    "manuscript_word_count": 4060,
+    "presentation_built": true
+  },
+  "needs_main_session_execution": [
+    "data download (kaggle datasets download -d behrad3d/nasa-cmaps + unzip into data/)",
+    "notebooks/01_EDA.ipynb",
+    "src/model_baseline.py",
+    "src/model_advanced.py",
+    "src/model_advanced.py with MODEL=transformer"
+  ],
+  "blockers": []
+}
