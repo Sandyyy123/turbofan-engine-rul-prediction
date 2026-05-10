@@ -20,7 +20,7 @@ Run
 ---
     python src/model_baseline.py
 
-Author: Sandeep Grover, Liora MLE Programme, Cohort 6973.
+Author: Sandeep Grover, Independent Research.
 """
 
 from __future__ import annotations

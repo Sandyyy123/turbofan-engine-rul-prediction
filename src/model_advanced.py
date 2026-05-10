@@ -22,7 +22,7 @@ Run
     python src/model_advanced.py                # LSTM
     MODEL=transformer python src/model_advanced.py
 
-Author: Sandeep Grover, Liora MLE Programme, Cohort 6973.
+Author: Sandeep Grover, Independent Research.
 """
 
 from __future__ import annotations

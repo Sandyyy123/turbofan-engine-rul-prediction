@@ -67,7 +67,7 @@ All references below were verified live against CrossRef (api.crossref.org/works
 
 # Additional References - Project 11: NASA Turbofan RUL Prediction
 
-Independent literature scout pass for Phase 1 of the C-MAPSS RUL scaffold. Search performed 2026-05-08 against CrossRef (api.crossref.org/works) and verified live per DOI. Papers below were chosen independently before the final SOTA-gap check against `reports/references.md`. Every entry below resolves under `https://api.crossref.org/works/{doi}` with title and journal matching CrossRef metadata. Per project rule, only Author / Title / Journal / Year / DOI fields are kept; volume / issue / page numbers are intentionally stripped.
+Independent literature scout pass for v1.0 of the C-MAPSS RUL implementation. Search performed 2026-05-08 against CrossRef (api.crossref.org/works) and verified live per DOI. Papers below were chosen independently before the final SOTA-gap check against `reports/references.md`. Every entry below resolves under `https://api.crossref.org/works/{doi}` with title and journal matching CrossRef metadata. Per project rule, only Author / Title / Journal / Year / DOI fields are kept; volume / issue / page numbers are intentionally stripped.
 
 ## State-of-the-art callout (gaps in current references.md)
 

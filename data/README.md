@@ -12,7 +12,7 @@
 Make sure Kaggle CLI is installed and credentials are at `~/.kaggle/kaggle.json`:
 
 ```bash
-cd /root/AI/liora_projects/11_nasa_turbofan/data
+cd /root/AI/project_root/data
 kaggle datasets download -d behrad3d/nasa-cmaps
 unzip nasa-cmaps.zip
 ```
@@ -44,10 +44,10 @@ Each `RUL_FDxxx.txt` is a single column of remaining cycles for the test units (
 | FD003  | 100         | 100        | 1             | 2 (HPC, Fan)|
 | FD004  | 248         | 249        | 6             | 2 (HPC, Fan)|
 
-## Phase 1 use
-Phase 1 scaffolds code only. **No execution.** The download is documented but the actual file fetch can be deferred to Phase 2 in the main session if Kaggle auth is unavailable inside the agent sandbox.
+## v1.0 use
+Initial implementations code only. **No execution.** The download is documented but the actual file fetch can be deferred to v1.0 in the main session if Kaggle auth is unavailable inside the agent sandbox.
 
-## Phase 2 plan
+## v1.0 plan
 - Use FD001 as primary subset (cleanest, most-cited in literature).
 - Validate on FD002-FD004 to test generalisation under varying conditions.
 - Apply piece-wise linear RUL cap at 125 cycles (Heimes 2008, Zheng 2017).

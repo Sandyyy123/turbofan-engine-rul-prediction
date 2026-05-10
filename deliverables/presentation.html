@@ -93,9 +93,9 @@
     <div class="item"><span class="lbl">Train units</span><span class="val">100 engines, 21 sensors</span></div>
     <div class="item"><span class="lbl">RUL cap</span><span class="val">125 cycles (piece-wise linear)</span></div>
     <div class="item"><span class="lbl">Window</span><span class="val">30 cycles, stride 1</span></div>
-    <div class="item"><span class="lbl">Phase</span><span class="val">1 - scaffolded code only</span></div>
+    <div class="item"><span class="lbl">Phase</span><span class="val">1 - implementationed code only</span></div>
   </div>
-  <div class="meta">Author: Sandeep Grover, Liora MLE Programme, Cohort 6973. Phase 1 deliverable, results pending Phase 2 execution.</div>
+  <div class="meta">Author: Sandeep Grover, Independent Research. v1.0 deliverable, results pending v1.0 execution.</div>
 </section>
 
 <section id="motivation">
@@ -127,8 +127,8 @@
   <h3>Schema</h3>
   <p>Each row: <code>unit_number</code>, <code>time_in_cycles</code>, three operational settings, 21 noisy sensor measurements. Each <code>RUL_FDxxx.txt</code> is a single column of remaining cycles for the test units.</p>
 
-  <h3>Phase 1 status</h3>
-  <p>Code-only scaffold. <code>data/README.md</code> documents the Kaggle CLI command. Actual download and unzip happens in Phase 2.</p>
+  <h3>v1.0 status</h3>
+  <p>Code-only implementation. <code>data/README.md</code> documents the Kaggle CLI command. Actual download and unzip happens in v1.0.</p>
 </section>
 
 <section id="methods">
@@ -167,8 +167,8 @@
 )</code></pre>
 
   <div class="box box-amber">
-    <strong>Phase 1 status</strong>
-    <p>Script <code>src/model_baseline.py</code> is ready to run. Validation RMSE, test RMSE, NASA score, and feature-importance ranking are placeholders pending Phase 2 execution.</p>
+    <strong>v1.0 status</strong>
+    <p>Script <code>src/model_baseline.py</code> is ready to run. Validation RMSE, test RMSE, NASA score, and feature-importance ranking are placeholders pending v1.0 execution.</p>
   </div>
 
   <h3>Why a tree baseline still matters</h3>
@@ -200,17 +200,17 @@
   </ul>
 
   <div class="box box-purple">
-    <strong>Phase 1 status</strong>
-    <p>Both architectures live in <code>src/model_advanced.py</code>. Convergence curves and final test metrics are placeholders pending Phase 2 execution. Whether the transformer beats the LSTM at our parameter budget is intentionally not pre-decided.</p>
+    <strong>v1.0 status</strong>
+    <p>Both architectures live in <code>src/model_advanced.py</code>. Convergence curves and final test metrics are placeholders pending v1.0 execution. Whether the transformer beats the LSTM at our parameter budget is intentionally not pre-decided.</p>
   </div>
 </section>
 
 <section id="discussion">
   <h2>Discussion</h2>
 
-  <h3>Strengths of the scaffold</h3>
+  <h3>Strengths of the implementation</h3>
   <ul>
-    <li>Clean separation between Phase 1 (scaffolding) and Phase 2 (execution). Numbers cannot leak in by accident.</li>
+    <li>Clean separation between v1.0 (implementation) and v1.0 (execution). Numbers cannot leak in by accident.</li>
     <li>Identical script structure across baseline and advanced for direct comparison.</li>
     <li>Three metrics (RMSE, MAE, NASA score) prevent gaming of any single metric.</li>
   </ul>
@@ -235,7 +235,7 @@
 
 <section id="conclusion">
   <h2>Conclusion</h2>
-  <p>We deliver a complete Phase 1 scaffold for NASA C-MAPSS RUL prediction following the Liora cohort 6973 layout. The deliverable comprises:</p>
+  <p>We deliver a complete Initial implementation for NASA C-MAPSS RUL prediction following the Portfolio  layout. The deliverable comprises:</p>
   <ul>
     <li>A Random Forest baseline on 30-cycle window statistics.</li>
     <li>An LSTM (with optional 1D-Transformer) on raw sensor sequences.</li>
@@ -244,7 +244,7 @@
     <li>A 4000+ word IMRaD manuscript with placeholder numbers explicitly flagged.</li>
     <li>This self-contained HTML presentation.</li>
   </ul>
-  <p>Phase 2 will populate placeholders by re-running the same scripts against actual C-MAPSS data and injecting canonical numbers from the resulting JSON artefacts. Future extensions span domain adaptation across the four C-MAPSS subsets, Bayesian uncertainty quantification, and survival-analysis comparison via Random Survival Forests (Ishwaran 2008).</p>
+  <p>v1.0 will populate placeholders by re-running the same scripts against actual C-MAPSS data and injecting canonical numbers from the resulting JSON artefacts. Future extensions span domain adaptation across the four C-MAPSS subsets, Bayesian uncertainty quantification, and survival-analysis comparison via Random Survival Forests (Ishwaran 2008).</p>
 </section>
 
 <section id="refs">
@@ -260,7 +260,7 @@
 </section>
 
 <footer>
-  Sandeep Grover - Liora MLE Programme, Cohort 6973 - Project 11 of 14 - Phase 1 scaffold complete - 2026-05-08
+  Sandeep Grover - Independent Research - Project 11 of 14 - Initial implementation complete - 2026-05-08
 </footer>
 
 </main>
