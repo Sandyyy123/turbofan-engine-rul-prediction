@@ -1,4 +1,4 @@
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue) ![Predictive Maintenance](https://img.shields.io/badge/task-RUL-orange) ![License](https://img.shields.io/badge/license-MIT-lightgrey)
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue) ![Predictive Maintenance](https://img.shields.io/badge/task-RUL-orange) ![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-lightgrey)
 
 # NASA Turbofan Engine Remaining Useful Life Prediction
 
