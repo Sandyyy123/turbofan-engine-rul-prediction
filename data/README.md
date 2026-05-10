@@ -12,7 +12,7 @@
 Make sure Kaggle CLI is installed and credentials are at `~/.kaggle/kaggle.json`:
 
 ```bash
-cd /root/AI/project_root/data
+cd data/
 kaggle datasets download -d behrad3d/nasa-cmaps
 unzip nasa-cmaps.zip
 ```
