@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Turbofan Engine RUL Prediction — Sandeep Grover</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
@@ -42,81 +41,32 @@ footer{text-align:center;padding:32px;color:var(--muted);font-size:.82rem;border
 </style>
 </head>
 <body>
-
 <nav>
   <a href="https://sandyyy123.github.io" class="nav-back">← Portfolio</a>
   <span class="nav-title">Turbofan Engine RUL Prediction</span>
   <a href="https://github.com/Sandyyy123/turbofan-engine-rul-prediction" target="_blank" class="nav-back" style="margin-left:auto">GitHub ↗</a>
 </nav>
-
 <div class="hero">
   <h1>Turbofan Engine RUL Prediction</h1>
   <p>Predicts Remaining Useful Life of aircraft turbofan engines from multivariate sensor sequences using Random Forest and LSTM on NASA CMAPSS (FD001-FD004).</p>
   <div class="badges"><span class="badge">LSTM</span> <span class="badge">Random Forest</span> <span class="badge">NASA CMAPSS</span></div>
   <div class="metric-bar">✦ RMSE + asymmetric score (late prediction penalty)</div>
 </div>
-
 <div class="card">
   <div class="section-title">Interactive Demo</div>
   <div class="highlight">LSTM + Random Forest | NASA CMAPSS | Asymmetric penalty</div>
   <p style="font-size:.82rem;color:#94a3b8;margin-bottom:16px">Predicted vs Actual RUL (FD001 Test Set)</p>
-  <div class="demo-container">
-<canvas id="myChart"></canvas>
-<script>
-new Chart(document.getElementById('myChart'), {
-  type: 'line',
-  data: {
-    labels: ["E001", "E010", "E020", "E030", "E040", "E050", "E060", "E070", "E080", "E090", "E100"],
-    datasets: [
-      {
-        label: 'Predicted RUL',
-        data: [112, 98, 87, 73, 64, 52, 41, 33, 24, 15, 8],
-        borderColor: 'rgba(99,102,241,0.9)',
-        backgroundColor: 'rgba(99,102,241,0.08)',
-        fill: true,
-        tension: 0.35,
-        pointRadius: 3,
-        borderWidth: 2.5
-      },
-      {
-        label: 'Actual RUL',
-        data: [118, 103, 91, 78, 68, 55, 44, 36, 27, 18, 11],
-        borderColor: 'rgba(148,163,184,0.55)',
-        backgroundColor: 'transparent',
-        borderDash: [5,4],
-        tension: 0.35,
-        pointRadius: 2,
-        borderWidth: 1.5
-      }
-    ]
-  },
-  options: {
-    responsive: true,
-    interaction: { intersect: false, mode: 'index' },
-    plugins: {
-      legend: { labels: { color: '#94a3b8', font: { size: 12 } } },
-      tooltip: { backgroundColor: 'rgba(15,17,32,0.95)', borderColor: 'rgba(99,102,241,0.3)', borderWidth: 1 }
-    },
-    scales: {
-      y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94a3b8' } },
-      x: { grid: { display: false }, ticks: { color: '#94a3b8', maxTicksLimit: 12 } }
-    }
-  }
-});
-</script></div>
+  <div class="demo-container"><canvas id="myChart"></canvas><script>
+new Chart(document.getElementById('myChart'),{type:'line',data:{labels:["E001", "E010", "E020", "E030", "E040", "E050", "E060", "E070", "E080", "E090", "E100"],datasets:[{label:'Predicted RUL',data:[112, 98, 87, 73, 64, 52, 41, 33, 24, 15, 8],borderColor:'rgba(99,102,241,0.9)',backgroundColor:'rgba(99,102,241,0.08)',fill:true,tension:0.35,pointRadius:3,borderWidth:2.5},{label:'Actual RUL',data:[118, 103, 91, 78, 68, 55, 44, 36, 27, 18, 11],borderColor:'rgba(148,163,184,0.55)',backgroundColor:'transparent',borderDash:[5,4],tension:0.35,pointRadius:2,borderWidth:1.5}]},options:{responsive:true,interaction:{intersect:false,mode:'index'},plugins:{legend:{labels:{color:'#94a3b8'}},tooltip:{backgroundColor:'rgba(15,17,32,0.95)',borderColor:'rgba(99,102,241,0.3)',borderWidth:1}},scales:{y:{grid:{color:'rgba(255,255,255,0.05)'},ticks:{color:'#94a3b8'}},x:{grid:{display:false},ticks:{color:'#94a3b8',maxTicksLimit:10}}}}});</script></div>
   <div class="stats-grid"><div class="stat-box"><span class="stat-value">NASA CMAPSS</span><span class="stat-label">Dataset</span></div><div class="stat-box"><span class="stat-value">17.3 cycles</span><span class="stat-label">RMSE</span></div><div class="stat-box"><span class="stat-value">2x weight</span><span class="stat-label">Late Penalty</span></div><div class="stat-box"><span class="stat-value">LSTM + RF</span><span class="stat-label">Models</span></div></div>
 </div>
-
 <div class="card">
   <div class="section-title">Tech Stack</div>
   <div class="badges" style="margin-bottom:0"><span class="badge">LSTM</span> <span class="badge">Random Forest</span> <span class="badge">NASA CMAPSS</span></div>
 </div>
-
 <footer>
-  <p>Built by <a href="https://sandyyy123.github.io">Sandeep Grover</a> ·
-     <a href="https://github.com/Sandyyy123/turbofan-engine-rul-prediction" target="_blank">GitHub Repo</a> ·
-     <a href="https://linkedin.com/in/sandeep-grover-b3192a16" target="_blank">LinkedIn</a></p>
+  <p>Built by <a href="https://sandyyy123.github.io">Sandeep Grover</a> &nbsp;·&nbsp;
+     <a href="https://github.com/Sandyyy123/turbofan-engine-rul-prediction" target="_blank">View on GitHub</a></p>
 </footer>
-
 </body>
 </html>
